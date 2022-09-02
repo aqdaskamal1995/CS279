@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list app</title>
+
+     <!-- linking the main.css file to index.html
+    main.css allows customization of styles to the
+    body -->
+
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+
+    <!-- Create a header component -->
+
+    <header>
+        <h1> To do list app </h1>
+        <!-- adding a form element which takes the new task as an input
+        and allows user to submit (add) to a list -->
+        <form id="new-task-form">
+            <input
+                type="'text" 
+                id="new-task-input"
+                placeholder="So what do you plan on doing?" />
+            
+            <input
+                type = 'submit'
+                id = "new-task-submit"
+                value = "Add task" />
+        </form>
+    </header>
+
+    <main>
+
+        <section class="'task-list">
+
+            <h2>Task List</h2>
+
+            <!-- A list of tasks where each specific task 
+            is repeatable, hence havng a div with class task 
+        looped within div with id tasks-->
+            <div id="tasks">
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <!-- Referencing the javascript file which contains the underlying logic for how 
+    users-->
+    <script src="main.js"></script>
+
+</body>
+</html>
